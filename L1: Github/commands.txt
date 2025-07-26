@@ -1,0 +1,28 @@
+# cmd basics
+- cd: change directory
+- mkdir: make directory
+- touch: make new file
+- cat: show contents of file
+- rm -rf : remove a file
+
+# All the commands used in Github
+
+# adding new file to repo
+
+- git init
+- git status
+- git add .
+- git commit -m "message here"
+- git log
+
+
+# upstaging / deleting commits
+
+- git reset hash_id : removes or upstages all the commits ABOVE this commit 
+
+# stashing modifications: let's say we modified a file, however we do not want to commit the changes, nor do we want to lose these changes, for this we use STASH in git, which allows to save these modifications in a backstage, from where these can be called (or cleared) as and when required
+
+- git add .
+- git stash : saved to the backstage
+- git stash pop: bring to the tracked files area, ready to be committed
+- git stash clear: remove the modifications and delete from the backstage
