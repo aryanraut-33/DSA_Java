@@ -1,3 +1,5 @@
+//code to find if a number is a prime or not, and print the factors
+
 import java.util.*;
 
 public class Prime_no {
