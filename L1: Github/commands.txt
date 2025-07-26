@@ -26,3 +26,43 @@
 - git stash : saved to the backstage
 - git stash pop: bring to the tracked files area, ready to be committed
 - git stash clear: remove the modifications and delete from the backstage
+
+
+# working with a online Github repo:
+
+- git remote add origin github_url : to link local with remote(url) GitHub
+- git push origin main: add the staged (committed) files to the remote GitHub)
+
+# branches in GitHub:
+
+- default branch name is master
+- git branch: find out which branch currently on
+- git branch b_name : add branch 
+- git checkout b_name : switch to branch b_name
+
+# open source works: forking, pull requests
+
+- while contributing to a open project, you cannot make changes directly to the owner repo; rather fork the repo to your own account
+- git remote add origin forked_url
+- got remote add upstream owner_url
+
+- create separate branch for each feature
+- never commit on main branch
+- create a pull request
+- if there is a difference in files in the local and remote repo, we'll have to force push it: git push origin main -f
+
+# to make sure the main of fork is updated wrt the main of upstream:
+- git checkout branch
+- git fetch --all --prune
+- git reset --hard upstream/main
+- git push origin main
+- git pull upstream main
+
+# squash commits: add multiple commits into a single commit
+
+- git rebase -i hash_id
+- p : pick to commit
+- s : squash with previous commit
+
+# merge conflict:
+- override manually
